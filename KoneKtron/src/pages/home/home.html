@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col col-4></ion-col>
+    
+      <ion-col col-4>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/logo_knt.png" alt="logo" />
+          </ion-thumbnail>      
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <ion-item>
+    <ion-label floating>E-mail</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <br>
+  <div padding>
+    <button ion-button color="primary" block (click)="login()">Login</button>
+  </div>
+
+  <div padding>
+    <button ion-button color="light" block (click)="register()">Registrar-se</button>
+  </div>
+</ion-content>
