@@ -48,6 +48,7 @@ import { MyRequestsPage } from '../pages/my-requests/my-requests';
     DashPage,
     ProfilePage,
     LoginPage,
+    RecoveryPage,
     TermsPage,
     MyRequestsPage
   ],

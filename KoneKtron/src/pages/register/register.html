@@ -44,6 +44,18 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)="register()">Criar Conta</button>
+    <button ion-button id="register" color="primary" block (click)="register()" disabled="disabled">Criar Conta</button>
   </div>
+
+  <ion-item>
+    <ion-label>Aceito os Termos</ion-label>
+    <ion-checkbox color="primary" checked="false" id="terms"></ion-checkbox>
+  </ion-item>
+
+  <br>
+  <!-- Float the icon left -->
+  <button ion-button icon-start full clear>
+    <ion-icon name="file"></ion-icon>
+    Conheça nossos termos
+  </button>
 </ion-content>

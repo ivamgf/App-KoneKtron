@@ -37,5 +37,8 @@ export class RegisterPage {
     this.presentLoading();
     this.navCtrl.setRoot(HomePage);    
   }
+  checkOnOff() {    
+     
+  }
 
 }

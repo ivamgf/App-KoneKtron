@@ -15,4 +15,26 @@
 
 <ion-content padding>
 
+  <ion-card>
+
+    <ion-card-header>
+      Recuperar senha
+    </ion-card-header>
+  
+    <ion-card-content>
+      <!-- Add card content here! -->
+      Digite seu e-mail para recuperar a sua senha!
+    </ion-card-content>
+  
+  </ion-card>
+
+  <ion-item>
+    <ion-label floating>E-mail</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <div padding>
+    <button ion-button color="primary" block (click)="recoveryPass()">Enviar Senha</button>
+  </div>
+
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the RecoveryPage page.
@@ -15,11 +16,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RecoveryPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public loadingCtrl: LoadingController
+    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecoveryPage');
+  }
+  presentLoading() {
+    const loader = this.loadingCtrl.create({
+      content: "Enviando a senha...",
+      duration: 3000
+    });
+    loader.present();    
+  }
+  recoveryPass() {
+    this.presentLoading();
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
