@@ -3,12 +3,12 @@
     <ion-title>
       Dashboard
     </ion-title>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
   </ion-navbar>  
 </ion-header>
 <ion-content padding>
-  <button ion-button menuToggle icon-only>
-    <ion-icon name='menu'></ion-icon>
-  </button>
 </ion-content>
 <ion-menu [content]="content">
   <ion-header>
@@ -23,7 +23,7 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <button ion-item menuToggle icon-only>
+      <button ion-item menuToggle icon-only>      
         Início
       </button>
       <button ion-item (click)="profile()">

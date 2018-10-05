@@ -4,15 +4,6 @@
   </ion-navbar>
 </ion-header>
 
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content padding>
 
   <ion-grid>
@@ -30,21 +21,16 @@
     </ion-row>
   </ion-grid> 
 
-  <ion-item>
-    <ion-label floating>E-mail</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  <!-- Float the icon left -->
+ <button ion-button icon-start full clear (click)="redirect_login()">
+    <ion-icon name="log-in"></ion-icon>
+    Já possuo uma conta
+  </button>
 
-  <ion-item>
-    <ion-label floating>Senha</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-  <br>
-  <div padding>
-    <button ion-button color="primary" block (click)="login()">Login</button>
-  </div>
-
-  <div padding>
-    <button ion-button color="light" block (click)="register()">Registrar-se</button>
-  </div>
+  <!-- Float the icon left -->
+  <button ion-button icon-start full clear (click)="register()">
+    <ion-icon name="person-add"></ion-icon>
+    Criar uma conta
+  </button>
+  
 </ion-content>
