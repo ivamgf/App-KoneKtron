@@ -17,6 +17,7 @@ import { LoginPage } from '../pages/login/login';
 import { RecoveryPage } from '../pages/recovery/recovery';
 import { TermsPage } from '../pages/terms/terms';
 import { MyRequestsPage } from '../pages/my-requests/my-requests';
+import { ShowcasePage } from '../pages/showcase/showcase';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MyRequestsPage } from '../pages/my-requests/my-requests';
     LoginPage,
     RecoveryPage,
     TermsPage,
-    MyRequestsPage
+    MyRequestsPage,
+    ShowcasePage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { MyRequestsPage } from '../pages/my-requests/my-requests';
     LoginPage,
     RecoveryPage,
     TermsPage,
-    MyRequestsPage
+    MyRequestsPage,
+    ShowcasePage
   ],
   providers: [
     StatusBar,
