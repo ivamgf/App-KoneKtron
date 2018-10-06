@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col col-4></ion-col>
+    
+      <ion-col col-4>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../assets/imgs/logo_knt.png" alt="logo" />
+          </ion-thumbnail>      
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <!-- Float the icon left -->
+ <button ion-button icon-start full clear (click)="redirect_login()">
+    <ion-icon name="log-in"></ion-icon>
+    Já possuo uma conta
+  </button>
+
+  <!-- Float the icon left -->
+  <button ion-button icon-start full clear (click)="register()">
+    <ion-icon name="person-add"></ion-icon>
+    Criar uma conta
+  </button>
+  
+</ion-content>

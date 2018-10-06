@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>    
+    <ion-title>
+      Dashboard
+    </ion-title>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+  </ion-navbar>  
+</ion-header>
+<ion-content padding>
+</ion-content>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+      <ion-title>
+        Menus
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item menuToggle icon-only>      
+        Início
+      </button>
+      <button ion-item (click)="profile()">
+        Perfil
+      </button>
+      <button ion-item (click)="logout()">
+        Logout
+      </button>
+    </ion-list>
+  </ion-content>  
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
